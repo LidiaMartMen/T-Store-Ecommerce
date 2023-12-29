@@ -12,8 +12,6 @@ class OnBoardingState {
   }) =>
       OnBoardingState(page: page ?? this.page);
 
-  @override
-  List<Object> get props => [page];
 }
 
 //NOTIFIER: notifica tu UI de que tu data ha cambiado:

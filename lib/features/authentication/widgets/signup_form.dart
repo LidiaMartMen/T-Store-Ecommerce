@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:t_store_firebase/features/authentication/screens/signup/verify_email_screen.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class SignupForm extends StatelessWidget {
@@ -96,7 +98,7 @@ class SignupForm extends StatelessWidget {
          SizedBox(
           width: double.infinity,
            child: ElevatedButton(
-              onPressed: (){}, 
+              onPressed: () => Get.to(() => const VerifyEmailScreen()), 
               child: const Text(CText.createAccount)),
          ),
       ],
