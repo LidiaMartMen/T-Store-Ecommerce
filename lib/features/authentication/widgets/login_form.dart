@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:t_store_firebase/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:t_store_firebase/features/authentication/screens/signup/signup_screen.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
@@ -48,7 +49,7 @@ class LoginForm extends StatelessWidget {
                 ],
               ),
               TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const ForgetPassword()),
                   child: const Text(
                     CText.forgetPassword,
                     style: TextStyle(color: CColors.accent),
