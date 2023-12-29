@@ -1,3 +1,5 @@
+export 'package:t_store_firebase/features/authentication/widgets/signup_form.dart';
+
 export 'package:t_store_firebase/features/authentication/widgets/social_buttons.dart';
 
 export 'package:t_store_firebase/features/authentication/widgets/form_divider.dart';

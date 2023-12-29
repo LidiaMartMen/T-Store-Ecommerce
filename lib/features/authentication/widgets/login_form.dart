@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:t_store_firebase/features/authentication/screens/signup/signup_screen.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class LoginForm extends StatelessWidget {
@@ -69,7 +71,9 @@ class LoginForm extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(() => const SignupScreen());
+                  },
                   child: const Text(CText.createAccount))),
         ],
       ),
