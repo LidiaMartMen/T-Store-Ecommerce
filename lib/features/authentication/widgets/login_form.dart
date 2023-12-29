@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:t_store_firebase/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:t_store_firebase/features/authentication/screens/signup/signup_screen.dart';
+import 'package:t_store_firebase/features/widgets/navigation_menu.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class LoginForm extends StatelessWidget {
@@ -64,7 +65,7 @@ class LoginForm extends StatelessWidget {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () {}, child: const Text(CText.signIn))),
+                  onPressed: () => Get.to(() => const NavigationMenu()), child: const Text(CText.signIn))),
           const SizedBox(
             height: CSizes.spaceBtwItems,
           ),
