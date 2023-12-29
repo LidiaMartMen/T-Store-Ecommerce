@@ -17,7 +17,7 @@ class CColors {
   ]);
 
   //TEXT COLORS:
-  static const Color textPrimary = Color(0xFF333333);
+  static const Color textPrimary = Color.fromARGB(255, 51, 51, 51);
   static const Color textSecondary = Color(0xFF6C7570);
   static const Color textWhite = Colors.white;
 

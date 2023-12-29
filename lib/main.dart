@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:get/get.dart';
+
 import 'package:t_store_firebase/config/theme/app_theme.dart';
-import 'package:t_store_firebase/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:t_store_firebase/features/authentication/screens/onboarding/onboarding_screen.dart';
 
 void main() {
 
@@ -26,9 +27,8 @@ class MainApp extends StatelessWidget {
       theme: CAppTheme.lightTheme,
       //config for dark theme:
       darkTheme: CAppTheme.darkTheme,
-      home: const OnBoardingScreen(),
       debugShowCheckedModeBanner: false,
-      
+      home: const OnBoardingScreen(),
     );
   }
 }

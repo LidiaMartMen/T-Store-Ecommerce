@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import 'package:get/get.dart';
+import 'package:t_store_firebase/features/authentication/screens/login/login_screen.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class OnBoardingSkip extends ConsumerWidget {
@@ -15,7 +16,7 @@ class OnBoardingSkip extends ConsumerWidget {
         right: CSizes.defaultSpace,
         child: TextButton(
             onPressed: () {
-              context.go('/login-screen');
+              Get.to(() => const LoginScreen());
             },
             child: const Text(
               'Skip',

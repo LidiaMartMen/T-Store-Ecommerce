@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import 'package:get/get.dart';
 import 'package:t_store_firebase/features/authentication/providers/onboarding_pageController_provider.dart';
 import 'package:t_store_firebase/features/authentication/providers/onboarding_provider.dart';
+import 'package:t_store_firebase/features/authentication/screens/login/login_screen.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class OnBoardingNextButton extends ConsumerWidget {
@@ -20,7 +21,7 @@ class OnBoardingNextButton extends ConsumerWidget {
       bottom: CDeviceUtils.getBottomNavigationBarHeight(),
       child: ElevatedButton(
           onPressed: () {
-            if (currentPage < 3) {
+            if (currentPage < 2) {
               ref
                   .read(onBoardingProvider.notifier)
                   .nextPage();
@@ -30,7 +31,7 @@ class OnBoardingNextButton extends ConsumerWidget {
                     curve: Curves.easeInOut,
                   );
             } else {
-              context.go('/login-screen');
+              Get.to(() => const LoginScreen());
             }
           },
           style: ElevatedButton.styleFrom(
