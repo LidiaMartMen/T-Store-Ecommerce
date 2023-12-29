@@ -8,8 +8,7 @@ class SignupScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  //SABER SI ES LIGHT OR DARK MODE:
-    final dark = CHelperFunctions.isDarkMode(context);
+
 
     return Scaffold(
       appBar: AppBar(),
@@ -28,7 +27,7 @@ class SignupScreen extends StatelessWidget {
               height: CSizes.spaceBtwSections,
             ),
             //FORM:
-            SignupForm(dark: dark),
+            SignupForm(),
 
             const SizedBox(height: CSizes.spaceBtwSections,),
 

@@ -4,13 +4,14 @@ import 'package:t_store_firebase/utils/utils.dart';
 class SignupForm extends StatelessWidget {
   const SignupForm({
     super.key,
-    required this.dark,
   });
 
-  final bool dark;
 
   @override
   Widget build(BuildContext context) {
+      //SABER SI ES LIGHT OR DARK MODE:
+    final dark = CHelperFunctions.isDarkMode(context);
+
     return Form(
         child: Column(
       children: [
