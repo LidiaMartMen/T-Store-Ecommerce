@@ -44,7 +44,7 @@ class CDeviceUtils {
   }
 
 //TE DICE LA ANCHURA DE LA PANTALLA:
-  static double getScreenWidth() {
+  static double getScreenWidth(BuildContext context) {
     return MediaQuery.of(Get.context!).size.width;
   }
 
