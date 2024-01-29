@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class CCartCounterIcon extends StatelessWidget {
-  
   final VoidCallback onPressed;
-  final Color iconColor;
-  
+  final Color? iconColor;
+
   const CCartCounterIcon({
-    super.key, required this.onPressed, required this.iconColor,
+    super.key,
+    required this.onPressed,
+    this.iconColor,
   });
 
   @override
@@ -16,7 +17,7 @@ class CCartCounterIcon extends StatelessWidget {
       children: [
         IconButton(
             onPressed: onPressed,
-            icon:  Icon(
+            icon: Icon(
               Icons.shopping_bag_outlined,
               color: iconColor,
             )),

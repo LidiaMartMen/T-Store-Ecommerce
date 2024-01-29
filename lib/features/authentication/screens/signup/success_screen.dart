@@ -2,19 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class SuccessScreen extends StatelessWidget {
+  static const String routeName = '/success-screen';
 
-    final String image;
-    final String title;
-    final String subtitle;
-    final VoidCallback onPressed;
+  final String image;
+  final String title;
+  final String subtitle;
+  final VoidCallback onPressed;
 
-  const SuccessScreen({super.key, required this.image, required this.title, required this.subtitle, required this.onPressed});
+  const SuccessScreen(
+      {super.key,
+      required this.image,
+      required this.title,
+      required this.subtitle,
+      required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
-  
-
-
     const EdgeInsetsGeometry padding = EdgeInsets.only(
       top: CSizes.appBarHeight,
       left: CSizes.defaultSpace,
