@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:t_store_firebase/features/authentication/providers/selected_index_provider.dart';
+import 'package:t_store_firebase/features/personalization/screens/settings/settings.dart';
 import 'package:t_store_firebase/features/shop/screens/screens.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
@@ -21,22 +22,25 @@ class NavigationMenu extends ConsumerWidget {
             ref.read(selectedIndexProvider.notifier).updateIndex(index);
           },
           backgroundColor: dark ? CColors.black : CColors.white,
-          indicatorColor: dark ? CColors.white.withOpacity(0.1) : CColors.black.withOpacity(0.1),
+          indicatorColor: dark
+              ? CColors.white.withOpacity(0.1)
+              : CColors.black.withOpacity(0.1),
           destinations: const [
             NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
             NavigationDestination(icon: Icon(Icons.shop), label: 'Store'),
             NavigationDestination(
-                icon: Icon(Icons.heat_pump_rounded), label: 'Wishlist'),
+                icon: Icon(Icons.favorite), label: 'Wishlist'),
             NavigationDestination(icon: Icon(Icons.people), label: 'Profile'),
           ]),
       body: IndexedStack(
         index: selectedIndex,
         children: const [
-              HomeScreen(),
-              StoreScreen(),
-              WishlistScreen(),
-              ProfileScreen(),
-        ],),
+          HomeScreen(),
+          StoreScreen(),
+          WishlistScreen(),
+          SettingsScreen(),
+        ],
+      ),
     );
   }
 }

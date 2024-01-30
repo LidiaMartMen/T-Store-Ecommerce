@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:t_store_firebase/common/widgets/appbar/images/rounded_images.dart';
+import 'package:t_store_firebase/common/widgets/images/rounded_images.dart';
 import 'package:t_store_firebase/features/authentication/providers/carousel_index_provider.dart';
 import 'package:t_store_firebase/features/shop/widgets/widgets.dart';
 import 'package:t_store_firebase/features/widgets/circular_container.dart';

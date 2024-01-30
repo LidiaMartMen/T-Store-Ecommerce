@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:t_store_firebase/common/styles/shadows.dart';
-import 'package:t_store_firebase/common/widgets/appbar/images/rounded_images.dart';
 import 'package:t_store_firebase/common/widgets/appbar/products/product_cards/rounded_container.dart';
+import 'package:t_store_firebase/common/widgets/images/rounded_images.dart';
 import 'package:t_store_firebase/common/widgets/icons/circular_icon.dart';
 import 'package:t_store_firebase/common/widgets/text/brand_title_with_verified_icon.dart';
 import 'package:t_store_firebase/common/widgets/text/product_price_text.dart';
 import 'package:t_store_firebase/common/widgets/text/product_title_text.dart';
+import 'package:t_store_firebase/features/shop/screens/product_details/product_detail.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class CProductCardVertical extends StatelessWidget {
@@ -16,7 +18,7 @@ class CProductCardVertical extends StatelessWidget {
     final dark = CHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetail()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),

@@ -3,11 +3,13 @@ import 'package:t_store_firebase/features/widgets/widgets.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class PrimaryHeaderContainer extends StatelessWidget {
-  
   final Widget child;
+  final double? height;
 
   const PrimaryHeaderContainer({
-    super.key, required this.child,
+    super.key,
+    required this.child,
+    this.height,
   });
 
   @override
@@ -17,7 +19,7 @@ class PrimaryHeaderContainer extends StatelessWidget {
         color: CColors.primary,
         padding: const EdgeInsets.all(0),
         child: SizedBox(
-          height: 400,
+          height: height,
           child: Stack(
             children: [
               Positioned(
@@ -30,7 +32,6 @@ class PrimaryHeaderContainer extends StatelessWidget {
                   right: -150,
                   child: CircularContainer(
                       backgroundColor: CColors.textWhite.withOpacity(0.1))),
-                    
               child,
             ],
           ),

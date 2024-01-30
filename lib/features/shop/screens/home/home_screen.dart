@@ -1,13 +1,13 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:t_store_firebase/common/widgets/appbar/images/promo_slider.dart';
-import 'package:t_store_firebase/common/widgets/appbar/images/rounded_images.dart';
-import 'package:t_store_firebase/common/widgets/appbar/products/product_cards/product_card_vertical.dart';
+import 'package:t_store_firebase/common/widgets/images/promo_slider.dart';
+
 import 'package:t_store_firebase/common/widgets/layout/grid_layout.dart';
-import 'package:t_store_firebase/features/authentication/providers/carousel_index_provider.dart';
+
 import 'package:t_store_firebase/features/shop/widgets/widgets.dart';
 import 'package:t_store_firebase/features/widgets/widgets.dart';
 import 'package:t_store_firebase/utils/utils.dart';
+
+import '../../../../common/widgets/appbar/products/product_cards/product_card_vertical.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -20,6 +20,7 @@ class HomeScreen extends ConsumerWidget {
         children: [
           //Customshape:
           const PrimaryHeaderContainer(
+            height: 400,
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               CHomeAppBar(),

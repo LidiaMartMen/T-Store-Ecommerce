@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../utils/utils.dart';
+import '../../../utils/utils.dart';
 
 class CRoundedImage extends StatelessWidget {
   const CRoundedImage({
@@ -37,8 +37,10 @@ class CRoundedImage extends StatelessWidget {
         width: width,
         height: heith,
         padding: padding,
-        decoration:
-            BoxDecoration(borderRadius: BorderRadius.circular(borderRadius)),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(borderRadius),
+            border: border,
+            color: backgroundColor),
         child: ClipRRect(
             borderRadius: applyImageRadius
                 ? BorderRadius.circular(borderRadius)
