@@ -4,12 +4,16 @@ import 'package:t_store_firebase/utils/utils.dart';
 class CProductPrice extends StatelessWidget {
   final String currencySign, price;
   final int maxLines;
+  final bool lineThrough;
+  final bool isLarge;
 
   const CProductPrice({
     super.key,
-    required this.currencySign,
+    this.currencySign = '€',
     required this.price,
-    required this.maxLines,
+    this.maxLines = 1,
+    this.lineThrough = false,
+    this.isLarge = false,
   });
 
   @override
@@ -18,8 +22,11 @@ class CProductPrice extends StatelessWidget {
       price + currencySign,
       maxLines: maxLines,
       overflow: TextOverflow.ellipsis,
-      style:
-          Theme.of(context).textTheme.labelLarge!.apply(color: CColors.black),
+      style: isLarge
+          ? Theme.of(context).textTheme.headlineMedium!.apply(
+              decoration: lineThrough ? TextDecoration.lineThrough : null)
+          : Theme.of(context).textTheme.titleLarge!.apply(
+              decoration: lineThrough ? TextDecoration.lineThrough : null),
     );
   }
 }
