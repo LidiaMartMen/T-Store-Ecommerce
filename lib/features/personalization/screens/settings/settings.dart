@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:t_store_firebase/common/widgets/appbar/appbar.dart';
 import 'package:t_store_firebase/common/widgets/listTiles/setting_menu_tile.dart';
 import 'package:t_store_firebase/common/widgets/listTiles/user_profile_tile.dart';
+import 'package:t_store_firebase/features/personalization/screens/address/address.dart';
 import 'package:t_store_firebase/features/personalization/screens/profile/profile_screen.dart';
 import 'package:t_store_firebase/features/shop/widgets/section_heading.dart';
 import 'package:t_store_firebase/features/widgets/primary_header_container.dart';
@@ -59,7 +60,7 @@ class SettingsScreen extends StatelessWidget {
                   icon: Icons.home_outlined,
                   title: 'My Adresses',
                   subtitle: 'Set shooping delivery adress',
-                  onTap: () {},
+                  onTap: () => Get.to(() => const UserAddressScreen()),
                 ),
                 CSettingMenuTile(
                   icon: Icons.shopping_cart_outlined,

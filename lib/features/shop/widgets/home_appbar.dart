@@ -1,4 +1,7 @@
+import 'package:get/get.dart';
 import 'package:t_store_firebase/common/widgets/appbar/appbar.dart';
+import 'package:t_store_firebase/features/shop/screens/cart/widgets/cart.dart';
+import 'package:t_store_firebase/features/shop/screens/product_details/product_detail.dart';
 import 'package:t_store_firebase/features/shop/widgets/widgets.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
@@ -28,8 +31,12 @@ class CHomeAppBar extends StatelessWidget {
           ),
         ],
       ),
-      actions: [CCartCounterIcon(onPressed: (){}, iconColor: CColors.white,)],
+      actions: [
+        CCartCounterIcon(
+          onPressed: () => Get.to(() => const CartScreen()),
+          iconColor: CColors.white,
+        )
+      ],
     );
   }
 }
-
