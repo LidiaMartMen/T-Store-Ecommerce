@@ -1,60 +1,47 @@
-import 'package:t_store_firebase/features/shop/widgets/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class CVerticalImageText extends StatelessWidget {
+  final Function()? onTap;
+  final String img;
+
   const CVerticalImageText({
     super.key,
+    this.onTap,
+    required this.img,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.only(left: CSizes.defaultSpace),
+        padding: const EdgeInsets.only(right: CSizes.spaceBtwItems),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Container(
+                width: 56,
+                height: 56,
+                padding: const EdgeInsets.all(CSizes.sm),
+                decoration: BoxDecoration(
+                  color: CColors.white,
+                  borderRadius: BorderRadius.circular(100),
+                ),
+                child: Center(
+                  child: Image(
+                    image: AssetImage(img),
+                    fit: BoxFit.cover,
+                    color: CColors.white,
+                  ),
+                )),
+            const SizedBox(height: CSizes.spaceBtwItems / 2),
             Text(
-              'Popular categories',
-              style: Theme.of(context).textTheme.headlineSmall,
-              
-            ),
-            const SizedBox(
-              height: CSizes.spaceBtwItems,
-            ),
-             SizedBox(
-              height: 80,
-               child: ListView.builder(
-                shrinkWrap: true,
-                itemCount: 6,
-                 scrollDirection: Axis.horizontal,
-                 itemBuilder: ((_, index) {
-                  return Padding(
-                    padding: const EdgeInsets.only(right: CSizes.spaceBtwItems),
-                    child: Column(
-                       children: [
-                         Container(
-                           width: 56,
-                           height: 56,
-                           padding: const EdgeInsets.all(CSizes.sm),
-                           decoration: BoxDecoration(
-                             color: CColors.white,
-                             borderRadius: BorderRadius.circular(100),
-                           ),
-                           child: const Center(
-                            child: Image(image: AssetImage(CImages.shoeIcon), fit: BoxFit.cover, color: CColors.white,),
-                            )
-                           ),
-                           const SizedBox(height: CSizes.spaceBtwItems/2),
-                           Text('Shoes', style: Theme.of(context).textTheme.labelMedium!.apply(color: CColors.white),)
-                       ],
-                     ),
-                  );
-                 }),
-                 
-               ),
-             )
+              'Shoes',
+              style: Theme.of(context)
+                  .textTheme
+                  .labelMedium!
+                  .apply(color: CColors.white),
+            )
           ],
         ),
       ),

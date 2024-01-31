@@ -37,7 +37,7 @@ class HomeScreen extends ConsumerWidget {
               ),
 
               //CATEGORIES:
-              CVerticalImageText()
+              CHomeCategories()
             ]),
           ),
 
