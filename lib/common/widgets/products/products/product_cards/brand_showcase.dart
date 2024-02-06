@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:t_store_firebase/common/widgets/appbar/products/product_cards/rounded_container.dart';
+import 'package:t_store_firebase/common/widgets/products/products/product_cards/rounded_container.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 import '../../../../../features/shop/screens/store/widget/custom_brand_card.dart';

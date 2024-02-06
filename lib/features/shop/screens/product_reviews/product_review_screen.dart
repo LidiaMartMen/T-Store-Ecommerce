@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:t_store_firebase/common/widgets/appbar/appbar.dart';
-import 'package:t_store_firebase/common/widgets/products/ratings/rating_bar_indicator.dart';
+import 'package:t_store_firebase/common/widgets/products/products/ratings/rating_bar_indicator.dart';
 import 'package:t_store_firebase/features/shop/screens/product_reviews/widgets/rating_progress_indicator.dart';
 import 'package:t_store_firebase/features/shop/screens/product_reviews/widgets/user_review_card.dart';
 import 'package:t_store_firebase/utils/utils.dart';

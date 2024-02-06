@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:t_store_firebase/utils/utils.dart';
 
-import '../../../../../common/widgets/appbar/products/product_cards/rounded_container.dart';
+import '../../../../../common/widgets/products/products/product_cards/rounded_container.dart';
 
 class CSingleAddress extends StatelessWidget {
   final bool selectedAddress;

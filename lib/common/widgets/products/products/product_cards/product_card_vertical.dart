@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:t_store_firebase/common/styles/shadows.dart';
-import 'package:t_store_firebase/common/widgets/appbar/products/product_cards/rounded_container.dart';
+import 'package:t_store_firebase/common/widgets/products/products/product_cards/rounded_container.dart';
 import 'package:t_store_firebase/common/widgets/images/rounded_images.dart';
 import 'package:t_store_firebase/common/widgets/icons/circular_icon.dart';
 import 'package:t_store_firebase/common/widgets/text/brand_title_with_verified_icon.dart';
@@ -39,6 +39,7 @@ class CProductCardVertical extends StatelessWidget {
                     imageUrl: CImages.productImage1,
                     applyImageRadius: true,
                   ),
+                  //SALE TAG:
                   Positioned(
                     top: 12,
                     child: CRoundedContainer(
@@ -92,6 +93,7 @@ class CProductCardVertical extends StatelessWidget {
                         maxLines: 1,
                         style: Theme.of(context).textTheme.headlineMedium,
                       ),
+                      //ADD TO CART BUTTON
                       Container(
                         decoration: const BoxDecoration(
                             color: CColors.dark,

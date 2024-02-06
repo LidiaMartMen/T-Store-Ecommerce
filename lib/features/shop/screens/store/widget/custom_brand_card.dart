@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../common/widgets/appbar/products/product_cards/rounded_container.dart';
+import '../../../../../common/widgets/products/products/product_cards/rounded_container.dart';
 import '../../../../../common/widgets/images/circular_images.dart';
 import '../../../../../common/widgets/text/brand_title_with_verified_icon.dart';
 import '../../../../../utils/utils.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:t_store_firebase/common/widgets/appbar/appbar.dart';
-import 'package:t_store_firebase/common/widgets/appbar/products/product_cards/rounded_container.dart';
+import 'package:t_store_firebase/common/widgets/products/products/product_cards/rounded_container.dart';
 import 'package:t_store_firebase/features/personalization/screens/address/widgets/add_new_address.dart';
 import 'package:t_store_firebase/features/personalization/screens/address/widgets/single_address.dart';
 import 'package:t_store_firebase/utils/utils.dart';

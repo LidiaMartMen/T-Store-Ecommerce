@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:t_store_firebase/common/widgets/appbar/appbar.dart';
-import 'package:t_store_firebase/common/widgets/appbar/products/product_cards/product_card_vertical.dart';
+import 'package:t_store_firebase/common/widgets/products/products/product_cards/product_card_vertical.dart';
 import 'package:t_store_firebase/common/widgets/icons/circular_icon.dart';
 import 'package:t_store_firebase/common/widgets/layout/grid_layout.dart';
 import 'package:t_store_firebase/features/shop/screens/home/home_screen.dart';

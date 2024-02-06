@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:t_store_firebase/common/widgets/appbar/appbar.dart';
-import 'package:t_store_firebase/common/widgets/appbar/products/product_cards/rounded_container.dart';
+import 'package:t_store_firebase/common/widgets/products/products/product_cards/rounded_container.dart';
 import 'package:t_store_firebase/features/authentication/screens/signup/success_screen.dart';
 import 'package:t_store_firebase/features/shop/screens/cart/widgets/coupon_widget.dart';
 import 'package:t_store_firebase/features/shop/screens/cart/widgets/list_cart_items.dart';

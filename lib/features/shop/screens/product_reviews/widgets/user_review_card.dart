@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
-import 'package:t_store_firebase/common/widgets/appbar/products/product_cards/rounded_container.dart';
-import 'package:t_store_firebase/common/widgets/products/ratings/rating_bar_indicator.dart';
+import 'package:t_store_firebase/common/widgets/products/products/product_cards/rounded_container.dart';
+import 'package:t_store_firebase/common/widgets/products/products/ratings/rating_bar_indicator.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
 class UserReviewCard extends StatelessWidget {

@@ -1,5 +1,5 @@
-import 'package:t_store_firebase/common/widgets/appbar/products/product_cards/brand_showcase.dart';
-import 'package:t_store_firebase/common/widgets/appbar/products/product_cards/product_card_vertical.dart';
+import 'package:t_store_firebase/common/widgets/products/products/product_cards/brand_showcase.dart';
+import 'package:t_store_firebase/common/widgets/products/products/product_cards/product_card_vertical.dart';
 import 'package:t_store_firebase/common/widgets/layout/grid_layout.dart';
 import 'package:t_store_firebase/features/shop/widgets/section_heading.dart';
 import 'package:t_store_firebase/utils/utils.dart';

@@ -6,7 +6,7 @@ import 'package:t_store_firebase/common/widgets/text/product_title_text.dart';
 import 'package:t_store_firebase/utils/helpers/helper_functions.dart';
 import 'package:t_store_firebase/utils/utils.dart';
 
-import '../../../../../common/widgets/appbar/products/product_cards/rounded_container.dart';
+import '../../../../../common/widgets/products/products/product_cards/rounded_container.dart';
 
 class CProductMetaData extends StatelessWidget {
   const CProductMetaData({super.key});
