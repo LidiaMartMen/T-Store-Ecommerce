@@ -1,7 +1,9 @@
+import 'package:get/get.dart';
 import 'package:t_store_firebase/common/widgets/appbar/appbar.dart';
 import 'package:t_store_firebase/common/widgets/products/products/product_cards/custom_category_tab.dart';
 import 'package:t_store_firebase/common/widgets/appbar/tabbar.dart';
-import 'package:t_store_firebase/features/shop/screens/store/widget/custom_brand_card.dart';
+import 'package:t_store_firebase/common/widgets/brands/custom_brand_card.dart';
+import 'package:t_store_firebase/features/shop/screens/brand/all_brands.dart';
 import 'package:t_store_firebase/features/shop/widgets/section_heading.dart';
 import 'package:t_store_firebase/features/shop/widgets/widgets.dart';
 import 'package:t_store_firebase/utils/utils.dart';
@@ -59,7 +61,8 @@ class StoreScreen extends StatelessWidget {
                         //featured brands
                         CSectionHeading(
                           title: 'Featured Brands',
-                          onPressed: () {},
+                          onPressed: () =>
+                              Get.to(() => const AllBrandsScreen()),
                         ),
                         const SizedBox(
                           height: CSizes.spaceBtwItems / 1.5,
